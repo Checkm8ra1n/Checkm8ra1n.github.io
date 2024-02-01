@@ -1,0 +1,42 @@
+body {
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px; /* Aggiunto spazio sopra per separare l'immagine dai pulsanti */
+}
+
+img {
+  margin-bottom: 20px; /* Aggiunto spazio sotto l'immagine */
+}
+
+.title {
+  font-size: 26pt;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18pt;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
