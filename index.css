@@ -40,3 +40,39 @@ img {
 .button:hover {
   background-color: #2980b9;
 }
+
+.link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20pt;
+  font-weight: bold;
+  color: aqua;
+}
+
+/* Stile base per l'immagine */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Effetto ombra */
+.image-container:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 242, 0.5); /* Colore dell'ombra (nero con opacità 0.5) */
+  z-index: 1;
+  transition: opacity 0.3s ease; /* Transizione per un effetto più fluido */
+  opacity: 1;
+}
+
+/* Puoi aggiustare l'opacità e il colore dell'ombra modificando i valori di rgba */

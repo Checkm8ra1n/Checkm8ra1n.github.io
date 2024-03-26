@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+.home{
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    color: aqua;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+  .home img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Effetto ombra */
+  .home:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(1, 107, 107); /* Colore dell'ombra (nero con opacità 0.5) */
+    z-index: 1;
+    transition: opacity 0.3s ease; /* Transizione per un effetto più fluido */
+    opacity: 1;
+  }
+  
+  /* Puoi aggiustare l'opacità e il colore dell'ombra modificando i valori di rgba */
+  
+  .writes{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .images img {
+    display: block;
+    margin: 0 auto;
+  }
+  

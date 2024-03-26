@@ -1,0 +1,35 @@
+.under {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif ;
+    text-align: right;
+}
+
+.learn {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.list {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    border-image: round;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.list:hover::after {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 217, 255, 0.5); /* Colore dell'ombra (nero con opacità 0.5) */
+  z-index: 1;
+  transition: opacity 0.3s ease; /* Transizione per un effetto più fluido */
+  opacity: 1;
+}
