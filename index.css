@@ -1,5 +1,5 @@
 body {
-  font-family: 'Calibri', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   color: #ffffff;
   margin: 0;
@@ -12,67 +12,62 @@ body {
   margin-top: 50px; /* Aggiunto spazio sopra per separare l'immagine dai pulsanti */
 }
 
-img {
-  margin-bottom: 20px; /* Aggiunto spazio sotto l'immagine */
-}
-
 .title {
-  font-size: 26pt;
-  font-weight: bold;
+  font-size: 24pt;
 }
-
 .subtitle {
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
+/* Stile del pulsante del dropdown */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
   font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #3498db;
-  color: #ffffff;
+  border: none;
+  cursor: pointer;
   border-radius: 5px;
-  margin: 10px;
-}
-
-.button:hover {
-  background-color: #2980b9;
-}
-
-.link {
-  text-align: center;
   text-decoration: none;
-  font-size: 20pt;
-  font-weight: bold;
-  color: aqua;
 }
 
-/* Stile base per l'immagine */
-.image-container {
+/* Dropdown container */
+.dropdown {
   position: relative;
   display: inline-block;
+  margin-bottom: 20px; /* Spazio tra il dropdown e l'immagine */
 }
 
-.image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Effetto ombra */
-.image-container:hover::after {
-  content: '';
+/* Contenuto del dropdown (i link) */
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 255, 242, 0.5); /* Colore dell'ombra (nero con opacità 0.5) */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  transition: opacity 0.3s ease; /* Transizione per un effetto più fluido */
-  opacity: 1;
+  border-radius: 5px;
 }
 
-/* Puoi aggiustare l'opacità e il colore dell'ombra modificando i valori di rgba */
+/* Stile dei link nel dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Stile hover per i link */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostra il contenuto del dropdown al passaggio del mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Cambia il colore del pulsante al passaggio del mouse */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

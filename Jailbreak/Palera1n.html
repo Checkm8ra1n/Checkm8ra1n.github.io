@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Detection with Combobox</title>
+    <link rel="stylesheet" href="Palera1n.css"> <!-- CSS comune per tutti -->
+</head>
+<body>
+    <div class="hstack">
+        <a href="..\index.html" alt="home image">
+            <img src="..\Checkra1nsite.png" width="50" height="60">
+        </a>
+        <a href="index.html" alt="JB home" class="jbhome">Jailbreak Home</a>
+    </div>
+
+    <!-- Combobox per selezionare il sistema operativo manualmente -->
+    <div class="os-selector">
+        <label for="osDropdown">Select your OS:</label>
+        <select id="osDropdown" class="os-combo">
+            <option value="auto">Auto-detect OS</option>
+            <option value="windows">Windows</option>
+            <option value="mac">macOS</option>
+            <option value="linux">Linux</option>
+        </select>
+    </div>
+
+    <div class="os-detection">
+        <p>Detecting your operating system...</p>
+    </div>
+
+    <!-- Contenuto dinamico per OS -->
+    <div id="osContent" class="os-content">
+        <!-- Il contenuto specifico per l'OS verrà caricato qui -->
+    </div>
+
+    <script src="Palera1n.js"></script>
+</body>
+</html>
