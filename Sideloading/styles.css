@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.softwares{
+    display: flex;
+    flex-wrap: wrap;
+}
+.softwares a{
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.note{
+    text-align: center;
+    margin: 0 120px 0 120px;
+    border: darkred solid 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    background-color: aquamarine;
+    color: black;
+    padding-left: 30px;
+}
+.nav p{
+    padding-right: 30px;
+}
+/* Stile del pulsante del dropdown */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Spazio tra il dropdown e l'immagine */
+  }
+  
+  /* Contenuto del dropdown (i link) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.dropdown-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+  /* Stile dei link nel dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 25px;
+  }
+  .dropdown-content img{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+  }
+  
+  /* Stile hover per i link */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Mostra il contenuto del dropdown al passaggio del mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Cambia il colore del pulsante al passaggio del mouse */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
