@@ -1,47 +1,228 @@
 body {
-    background-color: rgb(31, 31, 31);
+  background-color: rgb(35, 35, 35);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
 }
 
-.home{
-    text-align: right;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 18pt;
-    color: aqua;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  background-color: rgb(45, 45, 45);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  text-decoration: none; /* Remove underline for links */
+  color: white; /* Ensure text color remains white */
+  transition: background-color 0.3s ease;
 }
-  .home img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Effetto ombra */
-  .home:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(1, 107, 107); /* Colore dell'ombra (nero con opacità 0.5) */
-    z-index: 1;
-    transition: opacity 0.3s ease; /* Transizione per un effetto più fluido */
-    opacity: 1;
-  }
-  
-  /* Puoi aggiustare l'opacità e il colore dell'ombra modificando i valori di rgba */
-  
-  .writes{
-    text-align: center;
-    font-size: 22pt;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  .images img {
-    display: block;
-    margin: 0 auto;
-  }
-  
+
+.long-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(45, 45, 45);
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.long-container_left {
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(45, 45, 45);
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.game-container:hover {
+  background-color: rgb(55, 55, 55);
+}
+
+.game-container img {
+  border-radius: 5px;
+}
+
+.game-items {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Add spacing between items */
+  margin: 20px;
+}
+
+.game-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(45, 45, 45);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.game-container li {
+  list-style-type: none;
+  margin: 5px 0; /* Add some spacing between items */
+  font-size: 18px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the image and text vertically */
+}
+
+.game-container li img {
+  padding-left: 20px; /* Increase spacing between the image and text */
+}
+
+.game-container h4{
+  font-size: 23px; /* Increase font size for the title */
+}
+
+a {
+  text-decoration: none; /* Remove underline for links */
+}
+
+ul {
+  padding-left: 20px; /* Add padding to the left of the list */
+  margin: 0; /* Remove default margin */
+  list-style-type: none; /* Remove default list styling */
+}
+
+.mainimg{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Stile del pulsante del dropdown */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.dropbtn:hover{
+  background-color: rgb(0, 150, 0);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px; /* Spazio tra il dropdown e l'immagine */
+}
+
+/* Contenuto del dropdown (i link) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align images and text vertically */
+  padding-bottom: 25px;
+}
+
+.dropdown-content img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Stile dei link nel dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align images and text vertically */
+  padding-bottom: 25px;
+}
+.dropdown-content img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add spacing between the image and text */
+  padding-right: 10px;
+}
+
+/* Stile hover per i link */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostra il contenuto del dropdown al passaggio del mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Cambia il colore del pulsante al passaggio del mouse */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* Align images and text vertically */
+  background-color: aquamarine;
+  color: black;
+  padding-left: 30px;
+}
+
+.nav p {
+  padding-right: 30px;
+  display: flex; /* Ensure the text inside <p> aligns properly */
+  align-items: center; /* Align text and any inline elements vertically */
+}
+
+.nav img {
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+li {
+  list-style-type: none;
+  margin: 5px 0; /* Add some spacing between items */
+  font-size: 18px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the image and text vertically */
+}
+
+li img {
+  margin-left: 10px; /* Add spacing between the text and the image */
+}
+
+.mainimg {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}

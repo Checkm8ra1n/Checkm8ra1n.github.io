@@ -1,0 +1,16 @@
+{
+    "name": "Checkm8ra1n's",
+    "subtitle": "A collection of apps for iOS",
+    "description": "Welcome to my source! Here you will find my apps and a collection of my favorite apps.",
+    "iconURL": "https://checkm8ra1n.github.io/Checkra1nSite.png",
+    "headerURL": "https://checkm8ra1n.github.io/Checkra1nSite.png",
+    "website": "https://checkm8ra1n.github.io",
+    "patreonURL": ""
+    "tintColor": "#F54F32",
+    "featuredApps": [
+      "com.example.myapp",
+      "com.example.anotherapp"
+    ],
+    "apps": [],
+    "news": []
+  }

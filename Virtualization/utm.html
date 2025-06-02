@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../Checkra1nSite.png" alt="Logo" height="40">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="Fusion.html">VMWare Fusion</a>
+        <a href="VirtualBox.html">VirtualBox</a>
+        <a href="Parallels.html">Parallels</a>
+        <a href="QEMU.html">QEMU</a>
+        <a href="hyperv.html">Hyper-V</a>
+    </div>
+    </nav>
+    <header>
+        <img src="imgs/UTM.png" alt="UTM Logo" width="150" height="auto">
+        <h1>UTM - A GUI for QEMU for macOS and iOS!</h1>
+    </header>
+    <div class="card">
+        <p>UTM is a free and open-source virtualization software that allows you to run virtual machines on iOS and macOS devices.</p>
+        <p>Avaible platforms: </p>
+        <div class="platforms"><img src="imgs/mac.png" alt="macOS"><img src="imgs/iOS.png" alt="iOS"></div>
+        <br>
+    </div>
+    <div class="card">
+        <h2>How to install - macOS</h2>
+        <button><a href="https://github.com/utmapp/UTM/releases/download/v4.6.5/UTM.dmg">Download UTM DMG</a></button>
+        <p>Mount the DMG of UTM and drag it into the Applications folder</p>
+        <p>Open the UTM app, click on Create New Virtual Machine</p>
+    </div>
+    <div class="card">
+        <h2>How to install - iOS</h2>
+        <button><a href="https://apps.apple.com/us/app/utm-se-retro-pc-emulator/id1564628856">Download from App Store (no JIT, slower version)</a></button>
+        <button><a href="https://github.com/utmapp/UTM/releases/download/v4.6.5/UTM.ipa">Download UTM IPA (requires JIT, fastest version)</a></button>
+        <p>Open the UTM app, click on Create New Virtual Machine</p>
+        <ol type="A">
+            <li>Select Virtualize for make a VM of your native CPU, so for example if you have a x64 iPad, 
+            you can virtualize Windows 11, if you have Apple Silicon, you can virtualize Windows 11 arm64</li>
+            <li>Select Emulate for make a VM with other CPU architectures (ideal for ppc for example)</li>
+        </ol>
+        <p>For the JIT version, you have to sideload it</p>
+        <button><a href="../Sideloading/index.html">See here Sideloading Softwares and JIT</a></button>
+        <p></p>
+    </div>
+    <div class="card">
+        <h2>How to make a VM</h2>
+        <p>You can go to the <a href="https://mac.getutm.app/gallery/">UTM VM Gallery</a> and download a preconfigured VM</p>
+        <p>If you want to manually make it, see here how to do</p>
+        <img src="screens/UTM1.png" alt="" width="1024">
+        <p>First click on Create a New Virtual Machine</p>
+        <img src="screens/UTM2.png" alt="" width="406">
+        <ol type="A">
+            <li>Select Virtualize for make a VM of your native CPU, so for example if you have a x64 mac, 
+            you can virtualize Windows 11, if you have Apple Silicon, you can virtualize Windows 11 arm64</li>
+            <li>Select Emulate for make a VM with other CPU architectures (ideal for ppc for example)</li>
+        </ol>
+        <img src="screens/UTM3.png" alt="" width="406">        
+        <p>You can select Windows or Linux for a more simple and fast configuation, otherwise select other for make for example a ppc VM</p>
+        <img src="screens/UTM4.png" alt="" width="406">
+        <p>Now you have to select the ISO of the OS, you can simply download it searching it on google or <a href="iso.html">Here my ISO page</a>. Also set UEFI (for modern Windows) and TPM (for Windows 11)</p>
+        <img src="screens/UTM5.png" alt="" width="406">
+        <p>Now you have to set the RAM (4GB are ok, but you can change it) and the cores of the CPU</p>
+        <img src="screens/UTM6.png" alt="" width="406">
+        <p>Now you can set the disk size, the default is 64GB, but you can change it</p>
+        <p>All Done! Once you installed the OS, you can install SPICE tools, that are like the VMWare Tools</p>
+    </div>
+</body>
+</html>

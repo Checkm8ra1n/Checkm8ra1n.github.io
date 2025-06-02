@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QEMU Command Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>QEMU Command Generator</h1>
+    <p>Choose settings for your vm</p>
+    <label for="arch">Architecture: </label>
+    <select name="arch" id="arch">
+        <option value="i386">i386</option>
+        <option value="x86_64">x86_64</option>
+        <option value="arm">arm</option>
+        <option value="aarch64">aarch64</option>
+        <option value="ppc">ppc</option>
+        <option value="ppc64">ppc64</option>
+    </select>
+    <br><br>
+    <label for="ram">Memory: </label>
+    <input type="number" name="ram" id="ram" value="1024">
+    <br><br>
+    <label for="disk">HDA file location</label>
+    <input type="text" name="disk" id="disk" value="disk.qcow2">
+    <br><br>
+    <label for="cd">CD/DVD file location</label>
+    <input type="text" name="cd" id="cd" value="cd.iso">
+    <br><br>
+    <label for="boot">Boot from: </label>
+    <select name="boot" id="boot">
+        <option value="menu">Menu</option>
+        <option value="CD">CD/DVD</option>
+        <option value="Disk">HDA</option>
+    </select>
+    <br><br>
+    <input type="text" name="command" id="command" value="" readonly size="50">
+    <button id="Copy" onclick="copyCommand()">Copy</button>
+    <br>
+    <br>
+    <button id="Generate" onclick="writeCommand()">Generate Command</button>
+    <script src="script.js"></script>
+    <a href="img.html">Disk Command Generator</a>
+</body>
+</html>

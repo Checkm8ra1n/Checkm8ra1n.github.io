@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMWare Fusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/x-icon">
+</head>
+<body>    
+    <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../Checkra1nSite.png" alt="Logo" height="40">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="VMWare.html">VMWare</a>
+        <a href="VirtualBox.html">VirtualBox</a>
+        <a href="Parallels.html">Parallels</a>
+        <a href="QEMU.html">QEMU</a>
+        <a href="hyperv.html">Hyper-V</a>
+    </div>
+    </nav>
+    <header>
+        <img src="imgs/Fusion.png" alt="" width="150" height="auto">
+        <br>
+        <h1>VMWare Fusion - The macOS edition of VMWare</h1>
+    </header>
+    <div class="card">
+        <h2>VMware Fusion is the macOS edition of VMWare, as functionallity is same as Workstation Pro, the UI is a bit different respect but (I repeat) the features are the same</h2>
+        <p>Price: Free</p>
+        <p>Avaible Platforms: </p><img src="imgs/mac.png" width="50" height="auto" alt="macOS Logo">
+        <p>Minimum macOS version required: Catalina (10.15)</p>
+        <p>For Windows and Linux </p><button><a href="VMWare.html">go back to Workstation Pro</a></button>
+    </div>
+    <div class="card">
+        <h2>How to install</h2>
+        <button><a href="https://archive.org/download/vmware-fusion-13.5.2-23775688-universal_202406/VMware-Fusion-13.5.2-23775688_universal.dmg">Download Here (Direct Link)</a></button>
+        <p>Mount DMG and open the VMWare Fusion Installer</p>
+        <p>Follow the steps for installing VMWare Fusion</p>
+        <p>Once installed, go to settings, go to Privacy & Security, Accessibility and add/enable VMWare Fusion</p>
+        <p>Well the steps are the same as Workstation Pro, click on File -> New Virtual Machine</p>
+        <p>You will have to select the installation disc, that can be throgh a real disc, by selecting the drive letter, an iso file or you can choose set the iso in another time</p>
+        <p>Now VMWare can automatically detect the os from the iso or if you choosed to not using and installation disc, you can select the OS to install. 
+        <p>Now you'll have to create the virtual disk, you can chiise the size, VMWare assigns automatically the size of the disk in base of the os you selected</p>
+        <p>The VM creation is complete. If you want to set the amount of GB of RAM and/or the CPU cores to virtualize, you have to go to the VM settings</p>
+        <p>Once you booted and installed the OS, from the VMWare menu select VM -> Install VMWare Tools, this will mount a disk on your os with drivers for make the VM works</p>
+    </div>
+    <div class="card">
+        <h2>FAQ and how to resolve certain problems</h2>
+        <h2>Error -14 pipe connection has been broken</h2>
+        <p>If you have this issue when you try to start a VM, also if is a new one, the problem is that the SIP (Sistem Integrity Protection) is blocking the MV execution
+            for resolve this, you have to disable it, <a href="../macOS/SIP.html">see here how to do</a>
+        </p>
+        <h3>If you have problems that you wish to know the solution, you can contact me on the <a href="../Other/contact.html">contact page</a></h3>
+    </div>
+</body>
+</html>

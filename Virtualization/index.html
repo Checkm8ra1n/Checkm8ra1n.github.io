@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Machines - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 style="margin-left: 20px;">Virtual Machines</h1>
+        <h2 style="margin-left: 20px; padding-top: 2px;">Here's a list of virtual machine softwares that you can use in base as your system</h2>
+    </header>
+    <br>
+    <span class="os-selection">
+        <select name="" id="os-selection">
+            <option value="all">Show all software</option>
+            <option value="Windows">Windows</option>
+            <option value="macOS">macOS</option>
+            <option value="Linux">Linux</option>
+        </select>
+        <br>
+        <p style="padding-left: 20px;">Current os: </p>
+        <img src="imgs/AllOS.png" id="os-img" width="150" height="auto" style="padding-left: 30px;">
+    </span>
+    <span class="container">
+        <div class="card" id="VBox">
+            <img src="imgs/VBox.png" alt="">
+            <h3>VirtualBox</h3>
+            <p>VirtualBox is a free and open-source software for hypervisor and virtualization, developed by Oracle Corporation.</p>
+            <p>Avaible platforms: </p>
+            <img src="imgs/AllOS.png" alt="" width="150" class="platforms">
+            <br>
+            <button style="margin-top: 30px;"><a href="Virtualbox.html">View VirtualBox</a></button>
+        </div>
+        <br>
+        <div class="card" id="VMWare">
+            <img src="imgs/VMWare.png" alt="">
+            <h3>VMware</h3>
+            <p>VMware is a global leader in cloud infrastructure and digital workspace technology.</p>
+            <p>Avaible platforms: </p>
+            <img src="imgs/AllOS.png" alt="" width="150" class="platforms">
+            <br>
+            <button style="margin-top: 30px;"><a href="VMware.html">View VMware</a></button>
+        </div>
+        <div class="card" id="Parallels">
+            <img src="imgs/Parallels.png" alt="">
+            <h3>Parallels Desktop</h3>
+            <p>Parallels Desktop is a virtualization software for macOS for run Windows and other OSes with a lot of interesting features and tools.</p>
+            <p>Avaible platforms: </p>
+            <div class="platforms"><img src="imgs/mac.png"></div>
+            <br>
+            <button><a href="Parallels.html">View Parallels</a></button>
+        </div>
+        <br>
+        <div class="card" id="qemu">
+            <img src="imgs/qemu.png" alt="">
+            <h3>QEMU</h3>
+            <p>QEMU is a free and open-source emulator and virtualizer that performs hardware virtualization.</p>
+            <p>Avaible platforms: </p>
+            <img src="imgs/AllOS.png" alt="" width="150" class="platforms">
+            <br>
+            <button style="margin-top: 30px;"><a href="QEMU.html">View QEMU</a></button>
+        </div>
+        <br>
+        <div class="card" id="hyperv">
+            <img src="imgs/HyperV.png" alt="">
+            <h3>Hyper-V</h3>
+            <p>Hyper-V is a native hypervisor that creates virtual machines on x86-64 systems running Windows.</p>
+            <p>Avaible platforms: </p>
+            <div class="platforms"><img src="imgs/windows.png"></div>
+            <br>
+            <button style="margin-top: 30px;"><a href="HyperV.html">View Hyper-V</a></button>
+        </div>
+        <div class="card" id="utm">
+            <img src="imgs/UTM.png" alt="">
+            <h3>UTM</h3>
+            <p>UTM is a free and open-source virtualization and emulation software for macOS and iOS based on QEMU.</p>
+            <p>Avaible platforms: </p>
+            <div class="platforms"><img src="imgs/mac.png"><img src="imgs/iOS.png" alt=""></div>
+            <br>
+            <button style="margin-top: 30px;"><a href="UTM.html">View UTM</a></button>
+        </div>
+    </span>
+    <script src="virtualization.js"></script>
+</body>
+</html>

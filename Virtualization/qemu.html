@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QEMU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../Checkra1nSite.png" alt="Logo" height="40">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="Fusion.html">VMWare Fusion</a>
+        <a href="VirtualBox.html">VirtualBox</a>
+        <a href="utm.html">UTM</a>
+        <a href="Parallels.html">Parallels</a>
+        <a href="hyperv.html">Hyper-V</a>
+    </div>
+    </nav>
+    <header>
+        <img src="imgs/qemu.png" alt="" width="150">
+        <br>
+        <h1>QEMU - The cross platform command line emulator</h1>
+    </header>
+    <div class="card">
+        <h2>QEMU</h2>
+        <p>QEMU is a free and open source command line emulator for make VMs</p>
+        <p>Price: free</p>
+        <p>Avaible Platforms: </p><img src="imgs/Windows.png" width="50" height="auto" alt="Windows Logo"><img src="imgs/linux.png" width="50" height="auto" alt="Linux Logo"><img src="imgs/mac.png" alt="" width="50">
+    </div>
+    <div class="card">
+        <h2>How to install on Windows</h2>
+        <button><a href="https://qemu.weilnetz.de/w64/qemu-w64-setup-20250422.exe">Download setup 64 bit</a></button>
+        <button><a href="https://qemu.weilnetz.de/w32/qemu-w32-setup-20221230.exe">Download setup 32 bit</a></button>
+    </div>
+    <div class="card">
+        <h2>How to install on macOS</h2>
+        <p>You have to install Macports or Homebrew</p>
+        <button><a href="../Other/work.html">See here my package manager page for macOS</a></button>
+        <p>Command for Macports</p>
+        <div class="command">
+            <p>sudo port install qemu</p>
+        </div>
+        <p>Command for Homebrew</p>
+        <div class="command">
+            brew install qemu
+        </div>
+    </div>
+    <div class="card">
+        <h2>How to install on Linux</h2>
+        <p>Command for Debian/Ubuntu</p>
+        <div class="command">
+            <p>sudo apt install qemu-system</p>
+        </div>
+        <p>Command for Arch</p>
+        <div class="command">
+            <p>pacman -S qemu</p>
+        </div>
+        <p>Command for Fedora</p>
+        <div class="command">
+            <p>dnf install @virtualization</p>
+        </div>
+        <p>Command for suse</p>
+        <div class="command">
+            <p>zypper install qemu</p>
+        </div>
+    </div>
+    <div class="card">
+        <h2>How to make VM</h2>
+        <p>Since that QEMU is a command line tool, you have to make the virtual HDA and power the VM with the Terminal or CMD</p>
+        <p>If you don't know how it works</p>
+        <button><a href="../QEMU Command Generator/index.html">See here my QEMU Command Generator</a></button>
+        <button><a href="https://github.com/Checkm8ra1n/QEMU-Command-Generator">Also avaible on GitHub</a></button>
+    </div>
+</body>
+</html>

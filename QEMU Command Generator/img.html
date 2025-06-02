@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QEMU Command Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>QEMU Command Generator</h1>
+    <p>Choose settings for your disk</p>
+    <br><br>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" value="disk">
+    <br><br>
+    <label for="disk">Disk File Format: </label>
+    <select name="disk" id="disk">
+        <option value="qcow2">qcow2</option>
+        <option value="qed">qed</option>
+        <option value="raw">raw</option>
+        <option value="vdi">vdi</option>
+        <option value="vmdk">vmdk</option>
+        <option value="vhdx">vhdx</option>
+        <option value="vhd">vhd</option>
+    </select>
+    <br><br>
+    <label for="size">Disk Size (in GB): </label>
+    <input type="number" name="size" id="size" value="10" placeholder="Size (e.g., 10G)">
+    <br><br>
+    <input type="text" name="command" id="command" value="" readonly size="50">
+    <button id="Copy" onclick="copyCommand()">Copy</button>
+    <br>
+    <br>
+    <button id="Generate" onclick="writeCommand()">Generate Command</button>
+    <br><br>
+    <a href="index.html">QEMU Command Generator</a>
+    <script src="img.js"></script>
+</body>
+</html>
