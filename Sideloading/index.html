@@ -7,27 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sideloading Home</h1>
-    <p>Here there is a list of softwares for sideload apps on your iDevice</p>
-    <br>
-    <div class="softwares">
-        <a href="Sideloadly.html" style="color: aquamarine;">Sideloadly!</a>
-        <img src="Sideloadly.png" alt="" width="128">
+    <nav aria-label="Main navigation" class="navbar">
+        <div class="navbar-logo">
+            <a href="../index.html">
+                <img src="../Checkra1nSite.png" alt="Logo" height="40">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a class="dropbtn" href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="index.html">Sideloading Tools</a>
+                <div class="dropdown-content">
+                    <a href="Sideloadly.html"><img src="logos/Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
+                    <a href="AltStore.html"><img src="logos/AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
+                    <a href="SideStore.html"><img src="logos/SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
+                    <a href="TrollStore.html"><img src="logos/TrollStore.jpg" alt="" style="padding-left: 20px; ">TrollStore</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Sideloading Tools List</h1>
+    <div class="card-container">
+        <div class="card">
+            <img src="logos/Sideloadly.png" alt="Sideloadly Logo" class="card-logo">
+            <h2>Sideloadly</h2>
+            <p>A powerful tool for sideloading apps onto your iOS device.</p>
+            <a href="Sideloadly.html" class="down-button">View Sideloadly</a>
+        </div>
+        <div class="card">
+            <img src="logos/AltStore.png" alt="AltStore Logo" class="card-logo">
+            <h2>AltStore</h2>
+            <p>A popular alternative app store for iOS devices.</p>
+            <a href="AltStore.html" class="down-button">View AltStore</a>
+        </div>
+        <div class="card">
+            <img src="logos/SideStore.jpg" alt="SideStore Logo" class="card-logo">
+            <h2>SideStore</h2>
+            <p>A fork of AltStore for sideloading apps without a computer.</p>
+            <a href="SideStore.html" class="down-button">View SideStore</a>
+        </div>
+        <div class="card">
+            <img src="logos/TrollStore.jpg" alt="TrollStore Logo" class="card-logo">
+            <h2>TrollStore</h2>
+            <p>A tool for permanent iOS app installation on iOS 16.5 and lower.</p>
+            <a href="TrollStore.html" class="down-button">View TrollStore</a>
+        </div>       
     </div>
-    <br>
-    <div class="softwares">
-        <a href="AltStore.html" style="color: lime;">AltStore</a>
-        <img src="AltStore.png" alt="" width="130" style="padding-left: 26px;">
-    </div>
-    <br>
-    <div class="softwares">
-        <a href="SideStore.html" style="margin-right: 14px; color: magenta;">SideStore</a>
-        <img src="SideStore.jpg" alt="" width="127" style="border-radius: 18px;">
-    </div>
-    <br>
-    <div class="softwares">
-        <a href="TrollStore.html" style="margin-right: 17px; color: cyan;">TrollStore</a>
-        <img src="TrollStore.jpg" alt="" width="128" style="border-radius: 20px;">
-    </div>
+
 </body>
 </html>

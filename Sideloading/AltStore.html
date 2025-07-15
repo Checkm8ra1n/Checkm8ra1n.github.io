@@ -7,59 +7,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav">
-        <p class="dropbtn" style="margin-right: 10px; padding-right: 15px;">Home</p>
-        <br>
-        <div class="dropdown" style="padding-top: 32px;">
-            <a class="dropbtn" href="index.html">Sideloading Tools</a>
-            <br>
-            <div class="dropdown-content">
-              <a href="Sideloadly.html"><img src="Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
-              <a href="AltStore.html"><img src="AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
-              <a href="SideStore.html"><img src="SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
-              <a href="TrollStore.html"><img src="TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
+    <nav aria-label="Main navigation" class="navbar">
+        <div class="navbar-logo">
+            <a href="../index.html">
+                <img src="../Checkra1nSite.png" alt="Logo" height="40">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a class="dropbtn" href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="index.html">Sideloading Tools</a>
+                <div class="dropdown-content">
+                    <a href="Sideloadly.html"><img src="logos/Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
+                    <a href="AltStore.html"><img src="logos/AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
+                    <a href="SideStore.html"><img src="logos/SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
+                    <a href="TrollStore.html"><img src="logos/TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
+                </div>
             </div>
         </div>
+    </nav>
+    <header style="display: flex; align-items: center; gap: 18px;">
+        <img src="AltStore.png" alt="logo" width="80">
+        <h1 style="margin: 0;">AltStore</h1>
+    </header>
+    <div class="text-block">
+        <h2>Requirements</h2>
+            <ul>
+                <li>A Computer with Windows or macOS</li>
+                <li style="color: rgb(0, 120, 130);"><a href="https://cdn.altstore.io/file/altstore/altserver.zip" class="down-button">AltServer</a></li>
+                <li>USB cable or Wifi connection (not 5G)</li>
+            </ul>
+        <h2>Installation</h2>
+            <ul>
+                <li>Download and Install AltServer from the button above.</li>
+                <li>Connect your iOS device to your computer or make sure to be on the same Wi-Fi network.</li>
+                <li>Open AltServer, you will find it on the top menu (macOS) or in the system tray (Windows).</li>
+                <ol>
+                    <li>Select install AltStore and your iOS device.</li>
+                    <li>Enter your Apple ID and Password</li>
+                    <li>All Done, you should see AltStore on your Home Screen</li>
+                </ol>
+            </ul>
+        <h2>Install Apps</h2>
+         <ul>
+            <li>Open AltStore, make sure that AltServer is opened on your PC and your iPhone is connected via USB or same Wifi</li>
+            <li>Click on My Apps, on the Plus Button and choose the iPA you wish to install</li>
+            <li>You will be prompted to enter your Apple ID and Password, you have to wait a few minutes for the installation to complete</li>
+         </ul>
     </div>
-    <h1>AltStore</h1>
-    <img src="AltStore.png" alt="logo" width="256" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>AltStore is a sideloading tool for iOS that allows you to install apps not available on the App Store. It is available for both macOS and Windows.</p>
-    <br>
-    <p>First, download AltStore from the official website: <a href="https://altstore.io/#Downloads" style="color: aquamarine;">https://altstore.io/#Downloads</a></p>
-    <div class="note">
-        <p>Note for Windows: you have to download <a href="https://support.apple.com/en-us/HT201222">iTunes</a> and <a href="https://support.apple.com/en-us/HT204283">iCloud</a></p>
-        <p style="color: red;">(not from Microsoft Store, if you have them, uninstall them)</p>
-    </div>
-    <ul>
-        <li>On Windows, simply execute the installer that you downloaded</li>
-        <br>
-        <li>On macOS, mount the DMG and drag and drop the AltStore app to the Applications folder (or wherever you want)</li>
-    </ul>
-    <p>Now run AltServer on your PC you can find it, on macOS you can find it on the top bar</p>
-    <p>Connect your iOS device to your PC via USB or connect your PC and your iDevice to the same Wi-Fi Network</p>
-    <img src="trust.png" alt="" width="256" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p style="text-align: center; padding-bottom: 20px;">Now trust your device</p>
-    <img src="Device.png" alt="" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>Click on the AltServer icon on the top bar and click on "Install AltStore" and select your device</p>
-    <img src="Apple ID.png" alt="" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>Now AltStore will ask you your Apple ID and your Password, insert them and (if you have it) enter the 2FA code</p>
-    <img src="AltStore Home.PNG" alt="" width="256" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>Now you will see the AltStore app on your homescreen</p>
-    <p>Now when you try to open the app, probably you have to trust it: so go to Settings -> General -> VPN & Device Management -> Click on your Apple ID and click on trust; now AltStore will open</p>
-    <img src="AltStore Apps.PNG" alt="" width="256" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>Open AltStore, click on MyApps on the bottom tab, click on the + button and select the .ipa that you desire to install</p>
-    <p>All Done!</p>
 </body>
 </html>

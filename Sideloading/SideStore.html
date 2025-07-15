@@ -7,39 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav">
-        <p class="dropbtn" style="margin-right: 10px; padding-right: 15px;">Home</p>
-        <br>
-        <div class="dropdown" style="padding-top: 32px;">
+    <nav aria-label="Main navigation" class="navbar">
+<div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../Checkra1nSite.png" alt="Logo" height="40">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a class="dropbtn" href="index.html">Home</a>
+        <div class="dropdown">
             <a class="dropbtn" href="index.html">Sideloading Tools</a>
-            <br>
             <div class="dropdown-content">
-              <a href="Sideloadly.html"><img src="Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
-              <a href="AltStore.html"><img src="AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
-              <a href="SideStore.html"><img src="SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
-              <a href="TrollStore.html"><img src="TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
+                <a href="Sideloadly.html"><img src="logos/Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
+                <a href="AltStore.html"><img src="logos/AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
+                <a href="SideStore.html"><img src="logos/SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
+                <a href="TrollStore.html"><img src="logos/TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
             </div>
         </div>
     </div>
-    <h1>SideStore</h1>
-    <img src="SideStore.jpg" alt="logo" width="128" style="display: block;
-    margin-left: auto;
-    margin-right: auto; border-radius: 20px;">
-    <br>
-    <h3>SideStore is a fork (modified version) of AltStore that for sideload and refresh apps, needs only a wifi connection, so without USB</h3>
-    <p>Now on your iDevice go to the AppStore and download WireGuard; direct link -> <a href="https://apps.apple.com/us/app/wireguard/id1441195209?ls=1">https://apps.apple.com/us/app/wireguard/id1441195209?ls=1</a> and this file: <a href="https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf">WireGuard config file</a></p>
-    <p>Go to the SideStore official website and download the .iPA of SideStore on your PC: <a href="https://sidestore.io/#get-started" style="color: magenta;">SideStore Site</a> or download it directly from there -> <a href="https://github.com/sidestore/sidestore/releases/latest/download/sidestore.ipa">SideStore iPA</a></p>
-    <p>From this github page, download jitterbug for your PC OS: <a href="https://github.com/osy/Jitterbug/releases">https://github.com/osy/Jitterbug/releases/</a></p>
-    <p>Now you have to install AltServer on your PC (for sideload the Sidestore iPA), so download AltServer if you don't have it (direct link -> <a href="https://altstore.io/#Downloads">https://altstore.io/#Downloads</a>)</p>
-    <img src="AltStore ipa.png" alt="" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <p>When you will open AltStore, make sure to hold the Alt or Option ⌥ key on your keyboard, you should see the option "sideload .ipa" instead of "Install AltStore"</p>
-    <p>Now when the Finder or Explorer window will appaer, select the SideStore iPA that you donwloaded before</p>
-    <img src="jitterbug.png" alt="">
-    <p>Before opening SideStore, open the Terminal/CMD where you have donwloaded the jitterbug executable, run it and it will generate the mobiledevicepairing file. Once generated, you have to copy that file in your iDevice, so AirDrop it or send it via USB sharing or with LocalSend</p>
-    <p>Now open the WireGuard config file, this will automatically configure the SideStore VPN</p>
-    <p>Once you open SideStore, will ask you the mobiledevicepairing file, select it <p style="color: red;">(if the file doesn't work, try to change the file extension from .mobiledevicepairing to .plist)</p> go to My Apps section, make sure that you are conncted to a Wi-Fi Network and you will are able to install iPAs without PC!</p>
-    <h2 style="color: red;"> Note: SideStore will only work with Wi-Fi, not with 5G! Beacuse anisette data can be trasmetted with Wi-Fi only</h2>
+</nav>
+<header style="display: flex; align-items: center; gap: 18px;">
+    <img src="logos/SideStore.jpg" alt="logo" width="80" style="border-radius: 16px;">
+    <h1 style="margin: 0;">SideStore</h1>
+</header>
+<div class="text-block">
+    <h3>SideStore is a fork of AltStore, that allows to install ipas with only a wifi connection (not 5G)</h3>
+</div>
+    <div class="text-block">
+        <h1>How to install SideStore</h1>
+        <h2>Requirements</h2>
+        <ul>
+            <li>A Computer with Windows or macOS</li>
+            <li style="color: rgb(0, 120, 130);"><a href="https://cdn.altstore.io/file/altstore/altserver.zip" class="down-button">AltServer</a></li>
+            <li>USB cable and Wifi connection (not 5G)</li>
+            <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/iDevicePair--macos-universal.dmg" class="down-button">iDevice Pair</a></li>
+            <br>
+            <li><a href="https://apps.apple.com/us/app/stosvpn/id6744003051" class="down-button">Stos VPN</a></li>
+        </ul>
+        <h2>Installing SideStore</h2>
+        <p>To install SideStore, follow these steps:</p>
+        <ul>
+            <li><a href="https://github.com/sidestore/sidestore/releases/latest/download/sidestore.ipa" class="down-button">Download the SideStore IPA</a></li>
+            <li>Connect your iOS device to your computer using a USB cable.</li>
+            <li>Open AltStore, hold 􀆕 and choose <strong>Sideload ipa...</strong>, <strong>Your Device</strong>, choose the downloaded SideStore iPA and enter your Apple ID and Password</li>
+            <div class="img-group">
+                <img src="imgs/AltStore ipa.png" alt="">
+                <img src="imgs/Apple ID.png" alt="">
+            </div>
+            <li>Once installed you should see SideStore on your home screen.</li>
+        </ul>
+        <h2>Giving Config Files</h2>
+        <p>For make SideStore work, also can be able to use JIT:</p>
+        <ul>
+            <li>Open iDevice Pair, connect your iOS device with cable, under the SideStore voice, click on Install button (you can also save the .plist and set it manually on SideStore if doesn't work)</li>
+            <li>Once you gived SideStore the config files, open StosVPN, connect to a Wifi (not 5G) and connect to VPN, now you will be able to install apps as AltStore</li>
+        </ul>
+        <h2>JIT</h2>
+        <p>If you want to use JIT: </p>
+        <ul>
+            <li><a href="https://apps.apple.com/us/app/stikdebug/id6744045754" class="down-button">Download StikDebug</a></li>
+            <li>Connect to Wifi (not 5G)</li>
+            <li>Once opened select the app you wish to open with JIT and all done</li>
+        </ul>
+    </div>
+    <div class="text-block">
+        <footer>
+            <p>Checkm8ra1n Pages, SideStore, for more information. <a href="../Other/contact.html">Contact me</a></p>
+        </footer>
+    </div>
 </body>
 </html>

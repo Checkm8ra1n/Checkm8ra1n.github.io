@@ -7,53 +7,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav">
-        <p class="dropbtn" style="margin-right: 10px; margin-top: 10px; padding-right: 15px;">Home</p>
-        <br>
-        <div class="dropdown" style="margin-top: 10px; padding-top: 15px;">
-            <a class="dropbtn" href="index.html">Sideloading Tools</a>
-            <br>
-            <div class="dropdown-content">
-              <a href="Sideloadly.html"><img src="Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
-              <a href="AltStore.html"><img src="AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
-              <a href="SideStore.html"><img src="SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
-              <a href="TrollStore.html"><img src="TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
+    <nav aria-label="Main navigation" class="navbar">
+        <div class="navbar-logo">
+            <a href="../index.html">
+                <img src="../Checkra1nSite.png" alt="Logo" height="40">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a class="dropbtn" href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="index.html">Sideloading Tools</a>
+                <div class="dropdown-content">
+                    <a href="Sideloadly.html"><img src="logos/Sideloadly.png" alt="" style="padding-left: 20px;">Sideloadly</a>
+                    <a href="AltStore.html"><img src="logos/AltStore.png" alt="" style="padding-left: 20px;">AltStore</a>
+                    <a href="SideStore.html"><img src="logos/SideStore.jpg" alt="" style="padding-left: 20px;">SideStore</a>
+                    <a href="TrollStore.html"><img src="logos/TrollStore.jpg" alt="" style="padding-left: 20px;">TrollStore</a>
+                </div>
             </div>
         </div>
+    </nav>
+    <header style="display: flex; align-items: center; gap: 18px;">
+        <img src="logos/Sideloadly.png" alt="logo" width="80">
+        <h1 style="margin: 0;">Sideloadly</h1>
+    </header>
+    <div class="text-block">
+        <h2>Requirements</h2>
+            <ul>
+                <li>A Computer with Windows or macOS</li>
+                <li style="color: rgb(0, 251, 190);"><a href="https://sideloadly.io/SideloadlySetup.dmg" class="down-button">Sideloadly (macOS)</a> <br><br> <a href="https://sideloadly.io/SideloadlySetup64.exe" class="down-button">Sideloadly (Windows)</a></li>
+                <li>USB cable or Wifi connection (not 5G)</li>
+            </ul>
+        <h2>Usage</h2>
+            <ul>
+                <li>Download Sideloadly for your OS, install it through the install (Windows) or dmg (macOS)</li>
+                <li>Now open Sideloadly, connect your iOS device to your computer or connect it to the same wifi network</li>
+                <li>Now on the Apple ID text field, enter your Apple ID</li>
+                <li>Now choose the iPA you wish to install, click on install, enter your Apple ID Password, now you should see the app installing on your device</li>
+            </ul>
     </div>
-    <h1>Sideloadly</h1>
-    <img src="Sideloadly.png" alt="logo" width="256" style="display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;">
-    <p>Sideloadly is the best software for sideload Apps on iDevices using a computer (macOS and/or Windows), so here I will show you how to use this powerful tool</p>
-    <br>
-    <p>First Download Sideloadly from the official website: <a href="https://sideloadly.io/" style="color: aquamarine;">https://sideloadly.io/</a></p>
-    <div class="note">
-        <p>Note for Windows: you have to Download <a href="">iTunes</a> and <a href="">iCloud</a>
-        <p style="color: red;">(not from Microsoft Store, if you have them, uninstall them)</p>
-        </p>
-    </div>
-    <ul>
-        <li>On Windows simply execute the Installer that you downloaded</li>
-        <br>
-        <li>On macOS mount the dmg and drag and drop the Sideloadly app on Applications folder (or whatever you want)</li>
-    </ul>
-    <img src="Steps.png" alt="steps image">
-    <br>
-    <ol>
-        <li>Now you have to connect your iDevice to your computer</li>
-        <p>Then you have to drag and drop the IPA file that you want to install on your iDevice or click the IPA icon on Sideloadly and select the IPA from explorer/finder</p>
-        <li>Enter the ID Apple on the box as the image above</li>
-        <br>
-        <li>Click the Start button</li>
-    </ol>
-    <img src="Password.png" alt="password dialog">
-    <p>Now Sideloadly will ask you your ID Apple password and (if you have it) the 2 factor authentication code</p>
-    <p>After that, the app will start the installation process</p>
-    <p>When the installation is done, you will see the app on your iDevice</p>
-    <p>Now once the App is installed, go to settings, Privacy & Security, scroll on the bottom of the page and click on developer mode tab and enable the toggle of Developer Mode</p>
-    <p>One you enabled the Developer Mode, go to settings again, General, VPN & Device Management, click on you apple ID and click trust</p>
-    <h2>Enjoy you app :)</h2>
 </body>
 </html>
