@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to install macOS 9 with SheepShaver and/or QEMU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../Checkra1nSite.png" alt="Logo" height="40">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="Fusion.html">VMWare Fusion</a>
+        <a href="VirtualBox.html">VirtualBox</a>
+        <a href="Parallels.html">Parallels</a>
+        <a href="QEMU.html">QEMU</a>
+        <a href="hyperv.html">Hyper-V</a>
+    </div>
+    </nav>
+    <h1>Requirements</h1>
+    <ul>
+        <li>SheepShaver or QEMU installed</li>
+        <li>macOS 9 installation CD or iso</li>
+        <li>At least 512 MB of RAM free</li>
+        <li>Access to a PowerPC ROM file (for SheepShaver)</li>
+    </ul>
+    <h1>Steps to Download macOS 9 and its components</h1>
+    <div class="card" id="requirements">
+        <h2>Download macOS 9 ISO</h2>
+        <p>Download the macOS 9 installation ISO from a trusted source. Ensure it is compatible with your emulator. Sites such as:</p>
+        <button><a href="https://www.macintoshrepository.org/"><strong>Macintosh Repository</strong></a></button>
+        <button><a href="https://winworldpc.com/product/mac-os-9"><strong>WinWorldPC</strong></a></button>
+        <p>These sites provide a variety of classic Mac OS versions, including macOS 9.</p>
+        <h2>Download macOS 9 ROM</h2>
+        <p>For emulate macOS 9 on SheepShaver, you'll need the ROM, I reccomend to use the New WORLD ROM, you can find it on:</p>
+        <button><a href="https://www.redundantrobot.com/sheepshaver"><strong>Redundant Robot</strong></a></button>
+        <button><a href="https://www.macintoshrepository.org/7038-all-macintosh-roms-68k-ppc-"><strong>Macintosh Repository</strong></a></button>
+        <button><a href="https://archive.org/details/SheepShaver_Roms"><strong>Archive.org</strong></a></button>
+    </div>
+    <h1>How to install macOS 9 (QEMU)</h1>
+    <div class="card">
+        <h2>Install QEMU Scremer</h2>
+        <p style="color: red;">Note for windows users: If you are on windows, you have to install msys2 and build qemu-scremer with mingw-w64</p>
+        <p>The classic QEMU with macOS 9 will work, but the audio not, so you can build qemu-scremer, start with:</p>
+        <h2>First install dependencies: </h2>
+        <h2>macOS: </h2>
+        <p>Homebrew: </p><code>brew install libffi gettext glib pkgconfig pixman meson</code>
+        <p>Macports: </p><code>sudo port install libffi gettext glib pkgconfig libpixman meson</code>
+        <br><br>
+        <h2>Linux: </h2>
+        <p>Debian/Ubuntu: </p><code>sudo apt install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build libnfs-dev libiscsi-dev</code>
+        <p>Red Hat/Fedora: </p><code>yum install git glib2-devel libfdt-devel pixman-devel zlib-devel bzip2 ninja-build python3 python3-tomli</code>
+        <p>Suse: </p><code>sudo zypper install git-core gcc-c++ make qemu glib2-devel libpixman-1-0-devel clang perf valgrind</code><br></br>
+        <h2>Building QEMU </h2>
+        <code>git clone -b screamer-v9.1.0 https://github.com/mcayland/qemu</code><br><br>
+        <code>cd qemu</code>
+        <code>mkdir build</code>
+        <code>cd build</code><br><br>
+        <code>../configure --target-list=ppc-softmmu</code>
+        <code>make</code>
+        <p>Once finished, you should see the qemu-system-ppc execautable</p>
+        <h2>Booting macOS 9</h2>
+        <p>You have to download the macOS 9 requirements before, you can find them on the top of the page</p>
+        <h3>Creating the HDA</h3>
+        <code>./qemu-img create -f raw macos9.img 10G</code>
+        <h3>Booting the CD</h3>
+        <code>./qemu-system-ppc -L pc-bios/ -cpu "g4" -M mac99,via=pmu -m 512 -hda macos9.img -boot d -g 1024x768x32 -display cocoa -hdb ShareDisk.img -cdrom {CD}</code>
+        <p>Once finished, you can just remove the cdrom argument and use -boot c</p>
+        <h3>Booting macOS9</h3>
+        <code>./qemu-system-ppc -L pc-bios/ -cpu "g4" -M mac99,via=pmu -m 512 -hda macos92.img -boot c -g 1024x768x32 -display cocoa -hdb ShareDisk.img</code>
+    </div>
+    <h1>How to install macOS 9 (SheepShaver)</h1>
+    <div class="card">
+        <h2>Download SheepShaver</h2>
+        <button><a href="https://www.emaculation.com/sheepshaver/SheepShaver_universal_20250125.zip"><strong>Download SheepShaver (macOS)</strong></a></button>
+        <button><a href="https://surfdrive.surf.nl/files/index.php/s/CW04h2F0WkWkMCj/download"><strong>Download SheepShaver (Windows)</strong></a></button>
+        <button><a href="https://github.com/Korkman/macemu-appimage-builder/releases"><strong>Download SheepShaver (Linux)</strong></a></button>
+    </div>
+    <div class="textbox">
+        <h2>Install SheepShaver</h2>
+        <p>SheepShaver is a PowerPC emulator from macOS 8.5 to 9.0.4</p>
+        <br>
+        <p style="color: red;">Note for OpenCore Legacy Patcher Users: if you have OCLP (like me), prebuilt sheepshaver will not work, for make it work: <a href="https://www.emaculation.com/forum/viewtopic.php?p=81129#p81129">see here</a></p>
+        <p>You have to download the macOS 9 requirements before, you can find them on the top of the page</p>
+        <p>When you downloaded all the components, make sure to place them in ~/SheepShaver (because on some directories like Desktop SheepShaver will not start)</p>
+        <p>Make sure also to rename the ron into <code>Mac OS ROM</code>; so without the extension</p>
+        <p>Now simply open the SheepShaver app, if it crashes, open the <code>~/SheepShaver_prefs</code> and on the ROM entry set <br><br><code>~/SheepShaver/Mac OS ROM</code></p>
+        <img src="screens/Sheep1.png" alt="">
+        <p>Once SheepShaver opened, you should see a Floppy with a ? (Question Mark)</p>
+        <img src="screens/Sheep2.png" alt="">
+        <p>So Click on SheepShaver on the top bar and click on settings</p>
+        <img src="screens/Sheep3.png" alt="">
+        <p>Now click an add and select the macOS 9.0.4 iso (or whatever you downloaded)</p>
+        <p>Now click on create and you can create the Virtua Disk, set 5G of space that are enough</p>
+        <p>The RAM size is sufficient 512MB</p>
+    </div>
+</body>
+</html>
