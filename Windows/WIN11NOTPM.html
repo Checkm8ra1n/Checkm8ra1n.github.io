@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Windows 11 Without TPM</title>
-    <link rel="stylesheet" type="text/css" href="WIN11NOTPM.css">
+    <title>How to install Windows 11 without system requirements</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>How to install Windows 11 on a unsupported device</h1>
-    <br/>
-    <br/>
-    <p>In this tutorial I will show you how to install Windows 11 on a unsupported hardware</p>
+    <div class="navbar">
+    <div class="navbar-logo">
+      <img src="../Checkra1nSite.png" alt="Checkm8ra1n Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="index.html">Windows</a>  
+      <a href="Jailbreak/index.html">Jailbreak</a>
+      <a href="Sideloading/index.html">Sideloading</a>
+      <a href="Virtualization/index.html">Virtualization</a>
+    </div>
+  </div>
+    <h1>How to install Windows 11 on a unsupported device,</h1>
+    <p>Windows 11 has some system requirements that are not met by all devices. However, it is possible to install Windows 11 on unsupported hardware by bypassing these requirements.</p>
+    <div class="text-block">
+        <h2>Method 1: Using windows 10 installation media</h2>
+        <p>The first method is using a Windows 10 usb replacing the install.wim with the Windows 11 one.</p>
+        <p>So you have to download both windows 10 and windows 11 iso files.</p>
+        <p>Now when you have both iso files, you have to write windows 10 iso to your usb with rufus</p>
+        <p>After that, mount the windows 11 iso, go to sources and copy install <code>install.wim</code> to the usb drive, replacing the existing file.</p>
+    </div>
+    <div class="text-block">
+        <h2>Method 2: Using registry hack</h2>
+        <p>The second method is using a registry hack to bypass the TPM and secure boot checks.</p>
+        <p>When you booted to Windows 11, hold <code>SHIFT</code> and <code>F10</code> to open a command prompt.</p>
+        <p>In the command prompt, type <code>regedit</code> and press <code>ENTER</code> to open the registry editor.</p>
+        <p>On the registry editor, navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\Setup</code>.</p>
+        <p>Right-click on the <code>Setup</code> folder and select <code>New &gt; Key</code>. Name the new key <code>LabConfig</code>.</p>
+        <p>Right-click on the <code>LabConfig</code> folder and select <code>New &gt; DWORD (32-bit) Value</code>. Name the new value <code>BypassTPMCheck</code>.</p>
+        <p>Double-click on the <code>BypassTPMCheck</code> value and set its value data to <code>1</code>. Click <code>OK</code>.</p>
+        <p>Repeat this process with <code>BypassRAMCheck</code> (if you have less than 4GB of RAM) and <code>BypassSecureBootCheck</code>.</p>
+    </div>
 </body>
 </html>
