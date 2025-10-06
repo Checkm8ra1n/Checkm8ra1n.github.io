@@ -61,13 +61,32 @@ body {
 
 }
 
-.text-block{
-  background-color: rgb(55, 55, 55);
-  padding: 20px 20px 40px 20px;
-  border-radius: 20px;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card{
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
 }
+
+.card img{
+    width: 100px;
+    height: auto;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
 
 .down-button{
   background-color: rgb(20, 195, 20);
@@ -81,6 +100,7 @@ body {
   background-color: #28e028;
   box-shadow: 0 2px 8px rgb(40, 224, 40);
 }
+
 
 footer{
   text-align: right;
