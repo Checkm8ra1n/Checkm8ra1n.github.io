@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to edit system files on macOS</title>
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="../Checkra1nSite.png">
 </head>
 <body>
-  <h1>I don't know why but css doesn't load, perhaps the path of css file is correct</h1>
     <div class="navbar">
     <div class="navbar-logo">
       <img src="../Checkra1nSite.png" alt="Checkm8ra1n Logo">
@@ -31,10 +30,20 @@
         <h2>Preparing the USB Drive</h2>
         <p>The only way to edit system files, also with SIP disabled, is making it from a macOS USB installer.</p>
         <p>You need to have a macOS installer to make a macOS USB; it's not necessary to have the latest macOS on the USB drive.</p>
-        <a href="USBInstaller.html" class="down-button">Learn more</a><a href="https://github.com/Checkm8ra1n/Little-Python-Tools/blob/main/UNIX/macOS%20media.py" class="down-button">Check out my script</a>
+        <a href="USBInstaller.html" class="down-button">Learn more</a><br><a href="https://github.com/Checkm8ra1n/Little-Python-Tools/blob/main/UNIX/macOS%20media.py" class="down-button">Check out my script</a>
         <h2>Booting from the USB Drive</h2>
         <p>To boot from the USB drive, restart your Mac and hold down the Option (⌥) key while it boots up. This will bring up the Startup Manager, where you can select the USB drive as the boot device.</p>
         <p>Once you've selected the USB drive, your Mac will boot into the macOS installer. From there, you can go to Utilities -> Terminal to make the necessary changes to the system files.</p>
+        <h2>Mount the macOS disk correctly</h2>
+        <p>Once in terminal, you have first to know which disk is your macOS installation. You can do this by <code>diskutil list</code></p>
+        <p>You can recognize your disk by seeing partitions like <code>Macintosh HD</code> or <code>(your disk name) - Data</code>. Also is usually the disk1</p>
+        <p>Once you found the disk number, type <code>diskutil unmountDisk /dev/diskX</code> (replace X with your disk number) to unmount the disk.</p>
+        <p>Now we have to mount the system partition, so (Macintosh HD, but not with "- Data"), is usually the partition 1</p>
+        <p>So type before <code>mkdir /Volumes/SystemRoot (<--- or whatever name you prefer)</code> <code>mount -t apfs -o nobrowse,rw /dev/diskXs1 /Volumes/SystemRoot (or what you choosed before)</code></p>
+        <p>Now when you mounted the system partition, you can access it at /Volumes/SystemRoot (or what you choosed before).</p>
+        <p>Now you can edit the system files as needed. You can also type <code>diskutil mount /dev/diskXs4</code> for browsing in your personal files.</p>
+        <p>Once you have finished to edit files, type <code>bless --folder /Volumes/SystemRoot/System/Library/CoreServices --bootefi --createSnapshot</code></p>
+        <p>Now you can restart and boot into your macOS installation.</p>
     </div>
 </body>
 </html>

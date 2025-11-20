@@ -1,0 +1,29 @@
+<apps>
+    <category>
+        <name>Sideloading Tools</name>
+        <app>
+            <title>AltStore</title>
+            <developer>Riley Testut</developer>
+            <description>AltStore is an alternative app store for iOS devices that allows you to sideload apps without jailbreaking. It uses a unique method of sideloading apps by leveraging a developer feature in iOS.</description>
+            <icon>AltStore.png</icon>
+            <link>https://altstore.io/</link>
+            <download type="site">
+        </app>
+        <app>
+            <title>Sideloadly</title>
+            <developer>Sideloadly Team</developer>
+            <description>A sideloading tool for macOS and Windows</description>
+            <icon>Sideloadly.png</icon>
+            <link>https://sideloadly.io</link>
+            <download type="site">
+        </app>
+        <app>
+            <title>SideStore</title>
+            <developer>SideStore Team</developer>
+            <description>A modified version of AltStore that uses Wi-Fi for sideloading instead of USB</description>
+            <icon>SideStore.jpg</icon>
+            <link>https://sidestore.io</link>
+            <download type="site">
+        </app>
+    </category>
+</apps>

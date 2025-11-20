@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing Modded Nintendo Switch SD Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../Checkra1nSite.png" type="image/png">
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbar-logo">
+      <img src="Checkra1nSite.png" alt="Checkm8ra1n Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="../Jailbreak/index.html">Jailbreak</a>
+      <a href="../Sideloading/index.html">Sideloading</a>
+      <a href="../Virtualization/index.html">Virtualization</a>
+      <a href="../Windows/index.html">Windows</a>
+      <a href="../macOS/index.html">macOS</a>
+      <a href="../Switch/index.html">Nintendo Switch</a>
+    </div>
+  </div>
+    <h1>Preparing Modded Nintendo Switch SD Card</h1>
+    <div class="text-block">
+        <h2>1- Requirements</h2>
+        <ul>
+            <li>MicroSD card (at least 64GB recommended)</li>
+            <li>SD card reader (usually included with the MicroSD card)</li>
+            <li>A Windows, macOS, or Linux computer</li>
+            <li>Hakate (custom firmware bootloader)</li>
+            <a href="https://github.com/CTCaer/hekate/releases/download/v6.3.1/hekate_ctcaer_6.3.1_Nyx_1.7.0.zip" class="down-button">Download hekate</a>
+            <li>Atmosphère (custom firmware)</li>
+            <a href="https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.9.5/atmosphere-1.9.5-master-de9b02007+hbl-2.4.4+hbmenu-3.6.0.zip" class="down-button">Download Atmosphère</a>
+        </ul>
+    </div>
+    <div class="text-block">
+        <h2>2- Installing the Bootloader</h2>
+        <p>To install the custom firmware, once you downloaded Hakate and Atmosphere, extract the contents of both ZIP files to the root of your SD card.</p>
+    </div>
+    <div class="text-block">
+      <h2>3- Installing the Signature Patches</h2>
+      <p>For make the games work, also if you payed them, you need to install the signature patches. These patches allow you to run homebrew applications and games that are not signed by Nintendo.</p>
+      <ul>
+          <li>Download the signature patches</li>
+          <a href="https://gbatemp.net/threads/sigpatches-for-atmosphere-hekate-fss0-fusee-package3.571543/page-275#post-10692213" class="down-button">from here (wait the page loads completly)</a>
+          <li>Extract the contents of the ZIP file to the root of your SD card, merging the folders when prompted.</li>
+          <li>Download the hekate_ipl.ini file and replace with the original one on your SD card on the bootloader folder</li>
+          <a href="hekate_ipl.ini" class="down-button">Download here</a>
+          <li>Download also the syspatches, and copy all contents to the root of the SD card</li>
+          <a href="https://gbatemp.net/download/sys-patch-sysmodule.39124/" class="down-button">Download here</a>
+      </ul>
+    </div>
+    <div class="text-block">
+      <h2>4- Blocking Nintendo's Anti-Piracy Measures</h2>
+      <p>For don't make Nintendo detect your custom firmware, you need to block their anti-piracy measures. This can be done by using the sysmodules and patches you downloaded earlier.</p>
+      <a href="https://switch.hacks.guide/extras/blocking_nintendo.html" class="down-button">Learn more</a>
+    </div>
+</body>
+</html>
