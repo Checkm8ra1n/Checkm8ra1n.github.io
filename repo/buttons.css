@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.sileo{
+    background-color: rgb(47, 225, 241);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sileo:hover {
+    background-color: rgb(47, 200, 241);
+}
+
+.zebra{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.zebra:hover {
+    background-color: rgb(230, 230, 230);
+}
