@@ -1,0 +1,8 @@
+Origin: Checkm8ra1n Repo
+Label: Checkm8ra1n Repo
+Suite: stable
+Codename: ios
+Version: 0.1
+Architectures: iphoneos-arm64
+Components: main
+Description: Should I write something?
