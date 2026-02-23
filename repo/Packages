@@ -1,0 +1,43 @@
+Package: net.checkm8ra1n.quickrefresh
+Version: 0.0.1-4+debug
+Architecture: iphoneos-arm64
+Maintainer: Checkm8ra1n
+Installed-Size: 136
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/net.checkm8ra1n.quickrefresh_0.0.1-4+debug_iphoneos-arm64.deb
+Size: 4120
+MD5sum: 75014bf372faf02be1f8826ad2d323a6
+SHA1: 3029b725510ace5907820bcec4f961319554ec59
+SHA256: a8aef556acc64181c9d505dffecc65423d63862a84298e36050facfdc318dfb5
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: Checkm8ra1n
+Name: QuickRefresh
+
+Package: net.checkm8ra1n.quickrefreshui
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: Checkm8ra1n
+Depends: net.checkm8ra1n.quickrefresh
+Filename: ./debs/QuickRefresh-UI_0.1_iphoneos-arm64.deb
+Size: 88264
+MD5sum: 2ee3ebfd9b750b292fac8fdbc4bdf4cf
+SHA1: 7720b7fd2f8c4a5d39795b67c761196f772673cd
+SHA256: 67e23b7d203bb7cf0e9b5d4b739013018da5746467136d3735b583a259c1a01f
+Description: UI for QuickRefresh
+Section: Applications
+Name: QuickRefresh UI
+
+Package: zlib
+Version: 1.3.2
+Architecture: iphoneos-arm64
+Maintainer: Checkm8ra1n
+Filename: ./debs/zlib-1.3.2-iphoneos-arm64.deb
+Size: 82520
+MD5sum: 90f57b2df3a5ba1ad976d7a0b68ed1e1
+SHA1: 7e430369155d5beb419c40e9f01f00a88b0dc37e
+SHA256: f567b2a977b3f42991ee09cdf1bf6c98669c57e4d3053dfd12f93290834ed382
+Section: libs
+Priority: optional
+Description: zlib 1.3.2 built for rootless iOS (arm64)
+
